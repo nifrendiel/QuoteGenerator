@@ -21,8 +21,7 @@ function hideLoadingSpinner() {
 
 // API CALLS //
 
-// Get Quote from API forsimatic: https://forismatic.com/en/api/
-// TODO: create a dropdown menu to choose the language of the quote (lang=data)
+// Get quote from API
 async function getQuote() {
     showLoadingSpinner();
     // proxyUrl will help with CORS errors 
@@ -54,7 +53,6 @@ async function getQuote() {
 }
 
 // Tweet Quote
-// Get Twitter function from Twitter API: https://twitter.com/intent/tweet
 function tweetQuote() {
     const quote = quoteText.innerText;
     const author = authorText.innerText;
