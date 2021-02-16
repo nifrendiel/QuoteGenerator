@@ -26,7 +26,6 @@ function hideLoadingSpinner() {
 async function getQuote() {
     showLoadingSpinner();
     // proxyUrl will help with CORS errors 
-    // Todo [DONE]: setup own cors-anywhere so the proxyUrl is more reliable 
     const proxyUrl = 'https://damp-oasis-47838.herokuapp.com/';
     const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
     try {
